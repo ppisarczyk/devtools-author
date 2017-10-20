@@ -1,0 +1,43 @@
+/* ==============================================
+   Firefox Dark
+   ============================================== */
+
+$dark-theme: true; // Set true if theme has a dark background
+
+// Import Styles
+@import "base/theme-config";
+
+
+// Palette
+$base00: #14171a; // darkest grey
+$base01: #1d4f73;
+$base02: #373f4b;
+$base03: #3e4451;
+$base04: #5c636c;
+$base05: #7d8793;
+$base06: #a9bacb;
+$base07: #b6babf; // brighest grey
+$red: #eb5368; // red
+$orange: #d96629; // orange
+$yellow: #ffffb4; // yellow
+$green: #70bf53; // green
+$aqua: #70c0b1; // aqua
+$blue: #46afe3; // blue
+$purple: #6b7abb; // purple
+$brown: #d99b28; // brown
+
+// Styles
+@include styles(
+$base00, // Background
+$base01, // Background - Highlight
+$base04, // Comments / Secondary Content
+$base07, // Body text / default code / primary content / HTML attr name / CSS rule value
+$base07, // Optional emphasized content
+$base07, // CSS Properties
+$red, // CSS3 pseudo-selectors / elements
+$purple, // CSS Keywords (!important, etc.)
+$blue, // HTML Tags / CSS ID/Class Selectors / JS Keywords / Current item highlight
+$purple, // HTML/CSS/JS Strings
+$aqua, // CSS Tag Selectors / JS Operators (in Canary)
+$yellow  // Accent / Highlight
+);

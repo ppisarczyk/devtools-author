@@ -1,0 +1,43 @@
+/* ==============================================
+   Tomorrow Night Eighties
+   ============================================== */
+
+$dark-theme: true; // Set true if theme has a dark background
+
+// Import Styles
+@import "base/theme-config";
+
+
+// Palette
+$base00: #2d2d2d; // darkest grey
+$base01: #393939;
+$base02: #373f4b;
+$base03: #3e4451;
+$base04: #5c636c;
+$base05: #7d8793;
+$base06: #abb2ba;
+$base07: #c3cbd4; // brighest grey
+$red: #d54e53; // red
+$orange: #e78c45; // orange
+$yellow: #e2c08d; // yellow
+$green: #b9ca4a; // green
+$aqua: #70c0b1; // aqua
+$blue: #7aa6da; // blue
+$purple: #c397d8; // purple
+$brown: #d19365; // brown
+
+// Styles
+@include styles(
+$base00, // Background
+$base01, // Background - Highlight
+$base04, // Comments / Secondary Content
+$base07, // Body text / default code / primary content / HTML attr name / CSS rule value
+$base07, // Optional emphasized content
+$base07, // CSS Properties
+$red, // CSS3 pseudo-selectors / elements
+$purple, // CSS Keywords (!important, etc.)
+$red, // HTML Tags / CSS ID/Class Selectors / JS Keywords / Current item highlight
+$green, // HTML/CSS/JS Strings
+$aqua, // CSS Tag Selectors / JS Operators (in Canary)
+$yellow  // Accent / Highlight
+);
